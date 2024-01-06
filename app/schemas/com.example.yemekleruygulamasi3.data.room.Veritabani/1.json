@@ -1,0 +1,52 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "fdf1000870cb586a4cb138aab31476e1",
+    "entities": [
+      {
+        "tableName": "yemekler",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`yemek_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `yemek_adi` TEXT NOT NULL, `yemek_resim_adi` TEXT NOT NULL, `yemek_fiyat` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "yemek_id",
+            "columnName": "yemek_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "yemek_adi",
+            "columnName": "yemek_adi",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "yemek_resim_adi",
+            "columnName": "yemek_resim_adi",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "yemek_fiyat",
+            "columnName": "yemek_fiyat",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "yemek_id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'fdf1000870cb586a4cb138aab31476e1')"
+    ]
+  }
+}

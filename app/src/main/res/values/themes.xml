@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Açık tema -->
+    <style name="Theme.YemeklerUygulamasi3.Light" parent="android:Theme.Material.Light">
+        <item name="android:statusBarColor">@color/anaRenk</item>
+        <!-- Diğer açık tema özelliklerini burada tanımlayabilirsiniz -->
+    </style>
+
+    <!-- Koyu tema -->
+    <style name="Theme.YemeklerUygulamasi3.Dark" parent="android:ThemeOverlay.Material.Dark">
+        <item name="android:statusBarColor">@color/koyuRenk</item>
+        <!-- Diğer koyu tema özelliklerini burada tanımlayabilirsiniz -->
+    </style>
+</resources>
